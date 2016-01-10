@@ -1,0 +1,25 @@
+{
+  "name": "jspm-test-app",
+  "version": "1.0.0",
+  "description": "An example JSPM project showing how to require a 3rd party module but not bundle it.",
+  "main": "dist/my-module-dist.js",
+  "author": "Adam S. Kirschner <accounts@adamskirschner.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "jspm": "0.16.15"
+  },
+  "jspm": {
+    "configFile": "jspm.config.js",
+    "dependencies": {
+      "angular": "github:angular/bower-angular@^1.4.8",
+      "angular-bootstrap": "github:angular-ui/bootstrap-bower@^1.0.0",
+      "html": "github:systemjs/plugin-text@^0.0.4"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}

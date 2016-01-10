@@ -1,0 +1,22 @@
+<!doctype html>
+<html ng-app="test-app">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+
+    <title>JSPM Test</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.js"></script>
+
+    <script src="/dist/angular-my-module.js"></script>
+    <script src="js/test.js"></script>
+  </head>
+
+  <body ng-controller="TestCtrl as testCtrl">
+    <button class="btn btn-primary" ng-click="testCtrl.testAlertModal()">
+      Test Alert
+    </button>
+  </body>
+</html>
